@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二叉树可视化分析器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌳 二叉树可视化分析器</h1>
+
+        <!-- 任务 1: 输入与创建 -->
+        <div class="card">
+            <h2>1. 数据输入</h2>
+            <p>请输入层序遍历数组（用 null 或 空格 分隔，支持直接粘贴题目格式）：</p>
+            <textarea id="input-data" rows="2">[8, 4, 12, 2, 6, 10, 14, null, null, 5, 7]</textarea>
+            <button id="btn-build">构建二叉树并分析</button>
+        </div>
+
+        <!-- 任务 6: 树形可视化 -->
+        <div class="card">
+            <h2>2. 树形结构可视化</h2>
+            <pre id="tree-visual">等待构建...</pre>
+        </div>
+
+        <!-- 任务 2, 3, 4: 分析与判断结果 -->
+        <div class="card">
+            <h2>3. 综合分析报告</h2>
+            <div id="analysis-result" class="result-box">等待构建...</div>
+        </div>
+
+        <!-- 任务 5: 路径查找 -->
+        <div class="card">
+            <h2>4. 路径相关功能</h2>
+            <input type="number" id="search-target" placeholder="输入要查找的目标值">
+            <button id="btn-search">查找</button>
+            <div id="search-result" class="result-box">等待查找...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
